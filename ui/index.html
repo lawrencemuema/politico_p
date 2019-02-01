@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- Title -->
+        <title> politico | vote</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="win or lose, we go shopping after the elections" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="lawrence_muema" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='politico.css' />
+        
+        
+        
+        <style>
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.7);
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #40152A;
+  margin: auto;
+  padding: 0;
+    
+    height:auto;
+  width:20rem;
+    
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* The Close Button */
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close4 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close5 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: #F26419;
+  color: white;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 2px 16px;
+   text-align: center;
+    background-color: #40152A;
+    font-size:.8rem
+            }
+            
+     select{
+    width: 100%;
+   font-size:1.3rem;
+         font-weight: 600;
+  padding: 5px 20px;
+  margin: 2px 0;
+  display: inline-block;
+         border:0;
+  box-sizing: border-box;
+    height:50px;
+         background: #F59914;
+            }
+select option{
+         background: #261822;
+                font-size:1.0rem;
+            font-weight: 200;
+                font-family: 'Montserrat', sans-serif, Arial;
+                color:#F5D41E;
+                text-align: center;
+            }
+input[type=text], input[type=password], input[type=email],input[type=number] {
+  width: 100%;
+   font-size:.8rem; 
+  padding: 5px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+    height:50px;
+}
+  
+/* Add padding to containers */
+.container {
+  padding: 16px;
+    width:70%;
+    position: absolute;
+    left:10%;
+        
+}
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+span.psw2 {
+  float: right;
+  padding-top: 16px;
+}
+
+ /* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.log {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.log:hover {
+  opacity:1;
+}
+
+</style>
+    </head>
+<body>
+
+<div class="wrapper">
+    <!-- Nav -->
+      <nav>
+          <div class="logoh">
+              <a href="index.html"><h3>politico . . [home]</h3></a>
+          </div>
+       <!-- <ul class="topnav" id="dropdownClick">
+          
+            <li><a href="#contact">contact</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#home">home</a></li>
+          <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+          <li><a href="#home"><i class="fas fa-igloo"></i></a></li>
+        </ul>-->
+          <br>
+      </nav>
+
+  <!-- Home Section -->
+
+  <section class="home-section" id="home">
+        <header style="" id="head1">
+        <div class="home" STYLE="">
+           
+            <!-- styling background images -->
+            <style>
+                .img1{
+                    width:100%;
+                    height: auto;
+                }
+                .absolute{
+                    position: absolute;
+                    z-index: -5;
+                    width:30rem;
+                    height:20rem;
+                    top: 20vh;
+                    left: 30%;
+                }
+                .absolute2{
+                    position: absolute;
+                    z-index: -5;
+                    width:30rem;
+                    height:20rem;
+                    top: 85vh;
+                    left: 26%;
+                }
+                .absolute3{
+                    position: absolute;
+                    z-index: -5;
+                    width:30rem;
+                    height:20rem;
+                    top: 20vh;
+                    left: 95%;
+                }
+                .absolute4{
+                    position: absolute;
+                    z-index: -5;
+                    width:30rem;
+                    height:20rem;
+                    top: 10vh;
+                    left: 5%;
+                }
+                #content{
+                    width:30%;
+                    position: absolute;
+                    left:33%;
+                }
+                #content p{
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif, Arial;
+                    font-size: 35px; 	
+                    line-height: 35px;
+                    font-weight: bold;
+                }
+                .buttons{
+                    width:17rem;
+                    margin-left: -3%;
+                    position: fixed;
+                }
+            </style>
+            
+            
+              <h1>Our Online Elections</h1>
+              <br>
+              
+             </div>
+            <div id="content">
+            <p style="width:100%;">“ If I cannot do great things, I can do small things in a great way.”</p>
+                <br>
+            <p style="width:100%;">vote wisely</p>
+            </div>
+            <div class="zigzag absolute" style=" ">
+                        <img class="img1" src="assests/SHAPE13.PNG" alt=""/>
+            </div>
+            <div class="zigzag absolute2" style="z-index: 5">
+                        <img class="img1" src="assests/SHAPE12.PNG" style="width:100px;height: auto"alt=""/>
+            </div>
+            <div class="zigzag absolute3" style=" ">
+                        <img class="img1" src="assests/SHAPE11.jpg" alt=""/>
+            </div>
+            <div class="absolute4" style=" ">
+                        <img class="img1" src="assests/SHAPE14.PNG" alt=""/>
+            </div>
+            
+        </header>
+      <aside id="aside1">
+         <div style="margin-top:-22vh;text-align: center;margin-left: -35%">
+             <h3>upcoming elections</h3>
+            <p id="time"> - - - </p>
+          </div>
+          <div class="buttons">
+        <button class="click btnshadow" id="login_btnv">Start Voting</button><hr style="margin-left:-10%; width:70%">
+        <button class="click btnshadow" id="login_btnp">Apply for Office</button><hr style="margin-left:-10%; width:80%">
+        <button class="click btnshadow" id="login_btne">Manage Elections</button><hr style="margin-left:-10%; width:90%">
+          </div>
+      </aside>
+      
+      <!-- The Modal (logins) -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>User login</h2>
+        </div>
+        <div class="modal-body" style="height:50vh">
+             <form name="go" method="post" action="voter.html" autocomplete="off">
+              <div class="container">
+                <br>
+                  <!--
+                     <select id="acct" name="account"  onchange="nav(this)">
+                         
+                         <option value="0">Account type</option>
+                      <option value="voter.html">Voter</option>
+                      <option value="politician.html">Politician</option>
+                      <option value="body.html">Electoral body</option>
+                    </select>
+-->
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <br>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  <span class="psw">Reset <a href="#" id="pass">password?</a></span>
+                  <span class="psw2">new? <a href="#" id="sign_up">sign up</a></span>
+                <button  class="log">Login</button>
+                  
+              </div>
+
+            </form> 
+        </div>
+      </div>
+
+    </div>
+      
+      
+      
+      <!-- The Modal (contains the Sign Up form) -->
+      <div id="myModal2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close2" >&times;</span>
+          <h2>user sign up</h2>
+        </div>
+        <div class="modal-body" style="height:60vh">
+             <form method="post" action="" autocomplete="off">
+                <div class="container">
+                  
+                    <br>
+                  <input type="text" placeholder="Enter Name" name="name" required>
+                  <input type="email" placeholder="Enter Email" name="email" required>
+
+                    
+                  <input type="number" placeholder="Enter phone" name="phone" required>
+                  <input type="password" placeholder="Your Password" name="psw-repeat" required>
+
+                    <button type="submit" class="log">Sign Up</button>
+                </div>
+              </form> 
+        </div>
+      </div>
+
+    </div>
+  
+      
+      <!-- The Modal (reset password) -->
+      <div id="myModal3" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close3" >&times;</span>
+          <h2>Password reset</h2>
+        </div>
+        <div class="modal-body" style="height:48vh">
+             <form method="post" action="" autocomplete="off">
+                <div class="container">
+                   <input type="email" placeholder="Enter Email" name="email" required>
+                    <br>
+                 
+                  <input type="text" placeholder="Old password" name="oldpsw" required>
+                  <input type="password" placeholder="New password" name="newpsw" required>
+
+                    
+                  <input type="password" placeholder="Confirm password" name="confirmpsw" required>
+
+                    <button type="submit" class="log">Reset</button>
+                </div>
+              </form> 
+        </div>
+      </div>
+
+    </div>
+      
+      
+      
+      
+      
+      
+      <!-- politician sign in -->
+      <div id="polModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close4">&times;</span>
+          <h2>politician login</h2>
+        </div>
+        <div class="modal-body" style="height:55vh">
+             <form method="post" action="politician.html" autocomplete="off">
+              <div class="container">
+                <br>
+                  
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <br>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  <span class="psw">Reset <a href="#" id="pass2">password?</a></span>
+                <button  class="log">Login</button>
+                  
+              </div>
+
+            </form> 
+        </div>
+      </div>
+
+    </div>
+      
+      
+      <!-- E.body sign in -->
+      <div id="elModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close5">&times;</span>
+          <h2>Electoral Body login</h2>
+        </div>
+        <div class="modal-body" style="height:55vh">
+             <form method="post" action="body.html"  autocomplete="off">
+              <div class="container">
+                <br>
+                  
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <br>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  <span class="psw">Reset <a href="#" id="pass3">password?</a></span>
+                <button  class="log">Login</button>
+                  
+              </div>
+
+            </form> 
+        </div>
+      </div>
+
+    </div>
+      
+      
+    </section>
+
+    <!-- About
+
+    <section class="about-section" id="about">
+      <div class="about-me-center">
+      <h1>About Me</h1>
+    </div>
+    </section>
+
+ -->
+    
+    
+    
+    
+    
+    
+<section class="footer">
+  andela . politico 2019
+</section>
+
+<!-- Javascript -->
+<script>
+    function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+              }
+    }
+
+    
+    
+var modal = document.getElementById('myModal');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('polModal');
+var modal5 = document.getElementById('elModal');
+
+var btnv = document.getElementById("login_btnv");
+var btnp = document.getElementById("login_btnp");
+var btne = document.getElementById("login_btne");
+var btn2 = document.getElementById("sign_up");
+var btn3 = document.getElementById("pass");
+var btn4 = document.getElementById("pass2");
+var btn5 = document.getElementById("pass3");
+    
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
+
+// When the user clicks the button, open the modal 
+btnv.onclick = function() {
+  modal.style.display = "block";
+}
+btnp.onclick = function() {
+  modal4.style.display = "block";
+}
+btne.onclick = function() {
+  modal5.style.display = "block";
+}
+btn2.onclick = function(){
+    modal.style.display = "none";
+    modal2.style.display = "block";
+    
+}
+btn3.onclick = function(){
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "block";
+    modal4.style.display = "none";
+    modal5.style.display = "none";
+    
+}
+btn4.onclick = function(){
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "block";
+    modal4.style.display = "none";
+    modal5.style.display = "none";
+}
+btn5.onclick = function(){
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "block";
+    modal4.style.display = "none";
+    modal5.style.display = "none";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+span5.onclick = function() {
+  modal5.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    
+  }else if(event.target == modal2){
+      modal2.style.display = "none";
+  }else if(event.target == modal3){
+        modal3.style.display = "none";   
+           }
+    else if(event.target == modal4){
+        modal4.style.display = "none";   
+           }
+    else if(event.target == modal5){
+        modal5.style.display = "none";   
+           }
+}
+
+
+
+
+
+//for navigating to page during login
+/*var select = document.getElementById("acct");
+select.onchange = function() {
+    var selIndex = select.selectedIndex;
+    var selValue = select.options(selIndex).innerHTML;
+    
+    
+    if (selValue == "Voter"){
+        window.location.href="voter.html"
+    }else if(selValue == "Politician"){
+        window.location.href="politician.html"
+             }else if(selValue == "Electoral Body"){
+        window.location.href="electoralbody.html"
+    }
+}
+
+
+//nav
+function nav(select){
+    window.location = select.value;
+}
+    */
+    
+    </script>
+    
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 13, 2019 23:59:59").getTime();
+
+// Update the count down every 1 second
+var xy = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="time"
+  document.getElementById("time").innerHTML = days + " d  . ." + " "+ hours + " h  . ."+
+  " " + minutes + " m . ." +" "+  seconds + " s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(xy);
+    document.getElementById("time").innerHTML = "NONE";
+  }
+}, 1000);
+    </script>
+    
+  </div>
+</body>
+</html>
