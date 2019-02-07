@@ -1,10 +1,11 @@
+from views import *
 from flask import Blueprint
 from flask_restful import Api, Resource
-from views import *
+
 
 
 #versioning
-version_one = Blueprint('api_v1', __name__, url_prefix = '/api/v1')
+version_one = Blueprint('api.v1', __name__, url_prefix = '/api/v1')
 api = Api(version_one)
 
 
