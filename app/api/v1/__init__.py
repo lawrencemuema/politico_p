@@ -1,4 +1,4 @@
-from .api.v1.views import Party,Office,AllOffices,AllParties
+from .v1 import Party,Office,AllOffices,AllParties
 from flask import Blueprint
 
 
