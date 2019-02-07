@@ -1,6 +1,6 @@
 """ Global Imports """
 from flask import Flask, Blueprint
-from flask_restful import Api
+from flask_restful import Api, Resource
 
 """ Importing Blueprints """
 from .api.v1 import version_one as v1
