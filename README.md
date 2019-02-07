@@ -1,5 +1,5 @@
 
-# [POLITICO](https://lawrencemuema.github.io/politico_p/UI)
+# [POLITICO](https://lawrencemuema.github.io/politico_p/ui)
 
 an immersive online voting platform
 andela pre bootcamp challenge
