@@ -1,4 +1,4 @@
-from views import Party,Office,AllParties,AllOffices
+from views import Party,Office,AllOffices,AllParties
 from flask import Blueprint
 from flask_restful import Api, Resource
 
