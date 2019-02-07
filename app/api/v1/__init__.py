@@ -1,4 +1,3 @@
-from views import Party,Office,AllOffices,AllParties
 from flask import Blueprint
 
 
