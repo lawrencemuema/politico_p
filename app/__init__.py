@@ -1,18 +1,14 @@
-from flask import Flask
-from flask_restful import Api, Resource
-from .api.v1.views import Party, AllOffices,AllParties,Office
+from flask import Flask, Blueprint
+
+
+from .api.v1.views import version_one as v1
 
 
 
 
 def start_app():
     app = Flask(__name__)
-    api = Api(app)
 
-    api.add_resource(Party, '/party/<int:p_id>')
-    api.add_resource(AllParties, '/party')
-
-    api.add_resource(Office, '/office/<int:o_id>')
-    api.add_resource(AllOffices, '/office')
+    app.register_blueprint(v1)
 
     return app
