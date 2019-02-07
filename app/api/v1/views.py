@@ -1,8 +1,6 @@
 from flask import Flask , request, jsonify, make_response
 from flask_restful import Api, Resource, reqparse
 
-app = Flask(__name__)
-api = Api(app)
 
 #lists
 parties = []
