@@ -122,7 +122,7 @@ class Create_Candidates:
 
     def simplify(self):
         return dict(
-            id=self.office_id,
+            id=self.candidate_id,
             candidate=self.candidate,
             office = self.office_id,
             party=self.party_id
