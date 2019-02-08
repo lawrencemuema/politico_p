@@ -8,9 +8,16 @@ install:
   - pip install coveralls
 
 
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+- ./cc-test-reporter before-build
+
 script:
   - nosetests -v tests/test_party.py
   - nosetests -v tests/test_office.py
+  - coverage run --source=app -m pytest && coverage report
 
 after_success:
   - coveralls
