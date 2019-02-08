@@ -9,7 +9,8 @@ install:
 
 
 script:
-  - nosetests -v tests/test_politico.py
+  - nosetests -v tests/test_party.py
+  - nosetests -v tests/test_office.py
 
 after_success:
   - coveralls
