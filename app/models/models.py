@@ -82,6 +82,7 @@ class User:
         self.lastname = lastname
         self.othername = othername
         self.email = email
+        
         self.phoneNumber = phoneNumber
         self.passportUrl = passportUrl
         self.isAdmin = isAdmin
