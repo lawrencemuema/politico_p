@@ -8,7 +8,7 @@ class Validations:
     def validate_phone_number(self, phoneNumber):
      #phone must start and end with digit
      #10 digit only
-        return re.match(r'^\d{4}-\d{3}-\d{3}$', phoneNumber)
+        return re.match(r'^\d{4}\d{3}\d{3}$', phoneNumber)
 
     def validate_input_fields(self, input_fields):
     #input fields register only characters

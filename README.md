@@ -7,7 +7,7 @@ andela pre bootcamp challenge
 
 ## Code Status
 [![Build Status](https://travis-ci.org/lawrencemuema/politico_p.svg?branch=develop)](https://travis-ci.org/lawrencemuema/politico_p)
-[![Coverage Status](https://coveralls.io/repos/github/lawrencemuema/politico_p/badge.svg)](https://coveralls.io/github/lawrencemuema/politico_p)
+[![Coverage Status](https://coveralls.io/repos/github/lawrencemuema/politico_p/badge.svg)](https://coveralls.io/github/lawrencemuema/politico_p?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f859e7a849e3207e4eba/maintainability)](https://codeclimate.com/github/lawrencemuema/politico_p/maintainability)
 
 

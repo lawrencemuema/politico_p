@@ -1,11 +1,11 @@
-""" Global Imports """
 from flask import Flask, Blueprint
 from flask_restful import Api
 
 
 from .admin import admin_blueprint as admin_blp
+from .auth import user_blueprint as user_blp
 from .admin.views import Party, GetSpecificParty, CreateOffice, GetSpecificOffice
-
+from .auth.auth import UserSignUp, UserLogin
 
 
 def create_app():
@@ -14,6 +14,8 @@ def create_app():
 
     app.register_blueprint(admin_blp, url_prefix='/api/v1')
 
+    user = Api(user_blp)
+    app.register_blueprint(user_blp, url_prefix='/api/v1/user')
 
     """ creating admin endpoints"""
     admins.add_resource(Party,'/party')
@@ -21,6 +23,8 @@ def create_app():
     admins.add_resource(CreateOffice, '/office')
     admins.add_resource(GetSpecificOffice, '/office/<int:office_id>')
 
+    user.add_resource(UserSignUp, '/signup')
+    user.add_resource(UserLogin, '/signin')
 
 
     return app
