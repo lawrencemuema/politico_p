@@ -82,6 +82,7 @@ class User:
         self.lastname = lastname
         self.othername = othername
         self.email = email
+        
         self.phoneNumber = phoneNumber
         self.passportUrl = passportUrl
         self.isAdmin = isAdmin
@@ -122,7 +123,7 @@ class Create_Candidates:
 
     def simplify(self):
         return dict(
-            id=self.office_id,
+            id=self.candidate_id,
             candidate=self.candidate,
             office = self.office_id,
             party=self.party_id
