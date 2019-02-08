@@ -7,10 +7,11 @@ andela pre bootcamp challenge
 
 ## Code Status
 [![Build Status](https://travis-ci.org/lawrencemuema/politico_p.svg?branch=develop)](https://travis-ci.org/lawrencemuema/politico_p)
+[![Coverage Status](https://coveralls.io/repos/github/lawrencemuema/politico_p/badge.svg)](https://coveralls.io/github/lawrencemuema/politico_p)
 
 
 
-### End points
+### api End points
 Method | Endpoint | Usage |
 | ---- | ---- | --------------- |
 |POST| `/api/v1/party` |  Create a party. |
