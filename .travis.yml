@@ -11,7 +11,7 @@ install:
 
 before_script:
   - psql -c 'CREATE DATABASE Politico' -U postgres
-- psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public to postgres;" -U postgres
+  - psql -c "CREATE USER postgres WITH PASSWORD 'Remax';" -U postgres
 
 #script:
 #  - nosetests -v politico/tests/api/test_party.py
@@ -27,7 +27,7 @@ services:
   - postgresql
   
 addons:
-postgresql: "9.5"
+postgresql: "11.1"
 
 after_success:
   - coveralls
