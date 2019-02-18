@@ -9,15 +9,25 @@ install:
   - pip install pytest-cov
   - pip install coveralls
 
+before_script:
+  - psql -c 'CREATE DATABASE Politico' -U postgres
+- psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public to postgres;" -U postgres
 
-script:
-  - nosetests -v politico/tests/api/test_party.py
-  - nosetests -v politico/tests/api/test_office.py
-  - nosetests -v politico/tests/api/test_users.py
-  - nosetests -v politico/tests/api/test_votes.py
-  - nosetests -v politico/tests/api/test_candidates.py
+#script:
+#  - nosetests -v politico/tests/api/test_party.py
+#  - nosetests -v politico/tests/api/test_office.py
+#  - nosetests -v politico/tests/api/test_users.py
+#  - nosetests -v politico/tests/api/test_votes.py
+#  - nosetests -v politico/tests/api/test_candidates.py
   
-  - coverage run --source=app -m pytest && coverage report
+script:
+  - pytest --cov=politico
+
+services:
+  - postgresql
+  
+addons:
+postgresql: "9.5"
 
 after_success:
   - coveralls
