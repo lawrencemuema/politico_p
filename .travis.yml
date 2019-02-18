@@ -13,15 +13,15 @@ before_script:
   - psql -c 'CREATE DATABASE Politico' -U postgres
   - psql -c "CREATE USER lawrence WITH PASSWORD 'Remax';" -U postgres
 
-#script:
-#  - nosetests -v politico/tests/api/test_party.py
-#  - nosetests -v politico/tests/api/test_office.py
-#  - nosetests -v politico/tests/api/test_users.py
-#  - nosetests -v politico/tests/api/test_votes.py
-#  - nosetests -v politico/tests/api/test_candidates.py
-  
 script:
-  - pytest --cov=politico
+  - nosetests -v politico/tests/api/test_party.py
+  - nosetests -v politico/tests/api/test_office.py
+  - nosetests -v politico/tests/api/test_users.py
+  - nosetests -v politico/tests/api/test_votes.py
+  - nosetests -v politico/tests/api/test_candidates.py
+  
+# script:
+#   - pytest --cov=politico
 
 services:
   - postgresql
