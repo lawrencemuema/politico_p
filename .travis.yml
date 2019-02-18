@@ -11,7 +11,6 @@ install:
 
 before_script:
   - psql -c 'CREATE DATABASE Politico' -U postgres
-  - psql -c "CREATE USER lawrence WITH PASSWORD 'Remax';" -U postgres
 
 script:
   - nosetests -v politico/tests/api/test_party.py
