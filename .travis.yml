@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - "3.6"
+
+install:
+  - pip install -r requirements.txt
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install coveralls
+
+
+script:
+  - nosetests -v politico/tests/api/test_party.py
+  - nosetests -v politico/tests/api/test_office.py
+  - nosetests -v politico/tests/api/test_users.py
+  - nosetests -v politico/tests/api/test_votes.py
+  - nosetests -v politico/tests/api/test_candidates.py
+  
+  - coverage run --source=app -m pytest && coverage report
+
+after_success:
+  - coveralls

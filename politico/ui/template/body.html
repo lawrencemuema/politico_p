@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- Title -->
+        <title> body | politico</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="win or lose, we go shopping after the elections" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="lawrence_muema" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='politico.css' />
+        
+        
+        
+        <style>
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.7);
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #40152A;
+  margin: auto;
+  padding: 0;
+    
+    height:auto;
+  width:20rem;
+    
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+            .close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+            .close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: #F26419;
+  color: white;
+    text-align: center
+}
+
+.modal-body {
+    padding: 2px 16px;
+   text-align: center;
+    background-color: #40152A;
+    font-size:.8rem
+            }
+            
+     select{
+    width: 100%;
+   font-size:1.3rem;
+         font-weight: 600;
+  padding: 5px 20px;
+  margin: 2px 0;
+  display: inline-block;
+         border:0;
+  box-sizing: border-box;
+    height:50px;
+         background: #F59914;
+            }
+select option{
+         background: #261822;
+                font-size:1.0rem;
+            font-weight: 200;
+                font-family: 'Montserrat', sans-serif, Arial;
+                color:#F5D41E;
+                text-align: center;
+            }
+input[type=text], input[type=password], input[type=email],input[type=number] {
+  width: 100%;
+   font-size:.8rem; 
+  padding: 5px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+    height:50px;
+}
+  
+/* Add padding to containers */
+.container {
+  padding: 16px;
+    width:70%;
+    position: absolute;
+    left:10%;
+        
+}
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+span.psw2 {
+  float: right;
+  padding-top: 16px;
+}
+
+ /* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.log {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-size: 16px;
+}
+
+.log:hover {
+  opacity:1;
+}
+
+            
+            
+            #home{
+                overflow-y: auto;
+            }            
+</style>
+    </head>
+<body>
+
+<div class="wrapper">
+    <!-- Nav -->
+      <nav>
+          <div class="logoh">
+              <a href="index.html"><h3>politico . . [home]</h3></a>
+          </div>
+        <ul class="topnav" id="dropdownClick">
+          
+          <li><a href="body_office.html">offices</a></li>
+          <li><a href="body.html">parties</a></li>
+          <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+          <li><a href="#home"><i class="fas fa-igloo"></i></a></li>
+        </ul>
+      </nav>
+
+  <!-- Home Section -->
+
+  <section class="home-section" id="home">
+        <header style="" id="head1">
+        <div class="ourtable">
+           <hr>
+              <table>
+                  <caption>Registered Parties</caption>
+                  <tr>
+                    <th>LOGO</th>
+                    <th>NAME</th>
+                    <th>SLOGAN</th>
+                  </tr>
+                  <tr>
+                    <td><img src="assests/demo.jpg" alt="image" style="width:100px;height:auto"></td>
+                    <td>party 1</td>
+                    <td>arise we rise</td>
+                      <td style="text-align: center"><button class="alter" >edit</button></td>
+                      <td style="text-align: center"><button class="alter2">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assests/demo.jpg" alt="image" style="width:100px;height:auto"></td>
+                    <td>party 2</td>
+                    <td>arise we rise</td>
+                      <td style="text-align: center"><button class="alter">edit</button></td>
+                      <td style="text-align: center"><button class="alter2">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assests/demo.jpg" alt="image" style="width:100px;height:auto"></td>
+                    <td>party 3</td>
+                    <td>arise we rise</td>
+                      <td style="text-align: center"><button class="alter">edit</button></td>
+                      <td style="text-align: center"><button class="alter2">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assests/demo.jpg" alt="image" style="width:100px;height:auto"></td>
+                    <td>party 4</td>
+                    <td>arise we rise</td>
+                      <td style="text-align: center"><button class="alter">edit</button></td>
+                      <td style="text-align: center"><button class="alter2">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assests/demo.jpg" alt="image" style="width:100px;height:auto"></td>
+                    <td>party 5</td>
+                    <td>arise we rise</td>
+                      <td style="text-align: center"><button class="alter">edit</button></td>
+                      <td style="text-align: center"><button class="alter2">delete</button></td>
+                  </tr>
+                  
+             </table>
+             </div>
+        </header>
+      <aside id="aside1">
+        <button class="click btnshadow" id="create">Create Party</button>
+          <a href="body_office.html" style="color: #40152A;"><button class="click btnshadow" >Political Offices</button></a>
+      </aside>
+      
+      <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Party creation</h2>
+        </div>
+        <div class="modal-body" style="height:60vh">
+             <form name="go" autocomplete="off">
+              <div class="container">
+                  <div>
+                   <img style="float: left;width:30%;" src="assests/demo.jpg" alt="image" style="width:100px;height:auto">
+                <input style="float:left;width:70%;" type="file" placeholder="Party Logo" name="p_pic" required>
+                  </div>
+                 
+                <input type="text" placeholder="Party Name" name="p_name" required>
+                <input type="text" placeholder="Party Leader" name="p_lead" required>
+                <input type="text" placeholder="Party Slogan" name="p_slogan" required>
+                <input type="text" placeholder="Party Manifesto" name="p_manifesto" required>
+                
+
+                  
+                  
+                  
+                  
+                <button  class="log">Create</button>
+                  
+              </div>
+
+            </form> 
+        </div>
+      </div>
+
+    </div>
+      
+      
+      
+        <!-- The edit party Modal -->
+    <div id="myModal2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close2">&times;</span>
+          <h2>Edit Party</h2>
+        </div>
+        <div class="modal-body" style="height:60vh">
+             <form name="go" autocomplete="off">
+              <div class="container">
+                  <div>
+                   <img style="float: left;width:30%;" src="assests/demo.jpg" alt="image" style="width:100px;height:auto">
+                <input style="float:left;width:70%;" type="file" placeholder="Party Logo" name="p_pic" required>
+                  </div>
+                 
+                <input type="text" placeholder="Party Name" name="p_name" required>
+                <input type="text" placeholder="Party Leader" name="p_lead" required>
+                <input type="text" placeholder="Party Slogan" name="p_slogan" required>
+                <input type="text" placeholder="Party Manifesto" name="p_manifesto" required>
+                
+
+                  
+                  
+                  
+                  
+                <button  class="log">Update</button>
+                  
+              </div>
+
+            </form> 
+        </div>
+      </div>
+
+    </div>
+      
+      
+       <!-- The delete party Modal -->
+    <div id="myModal3" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close3">&times;</span>
+          <h2>Delete Party</h2>
+        </div>
+        <div class="modal-body" style="height:35vh">
+             <form name="go" autocomplete="off">
+              <div class="container">
+                <input type="text" placeholder="Party Name" name="p_name" required>
+                <input type="text" placeholder="Party Leader" name="p_lead" required>
+                
+                <button  class="log">Delete</button>
+                  
+              </div>
+
+            </form> 
+        </div>
+      </div>
+
+    </div>
+      
+    </section>
+
+    <!-- About
+
+    <section class="about-section" id="about">
+      <div class="about-me-center">
+      <h1>About Me</h1>
+    </div>
+    </section>
+
+ -->
+    
+    
+    
+    
+    
+    
+<section class="footer">
+  andela . politico 2019
+</section>
+
+<!-- Javascript -->
+<script>
+    function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+              }
+    }
+
+    
+    
+var modal = document.getElementById('myModal');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+
+var btn = document.getElementById("create");
+var btn2 = document.getElementsByClassName("alter")[0];
+var btn3 = document.getElementsByClassName("alter2")[0];
+    
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    
+  }else if(event.target == modal2){
+           modal2.style.display = "none"
+           }
+    else if(event.target == modal3){
+           modal3.style.display = "none"
+           }
+}
+
+
+
+
+
+//for navigating to page during login
+/*var select = document.getElementById("acct");
+select.onchange = function() {
+    var selIndex = select.selectedIndex;
+    var selValue = select.options(selIndex).innerHTML;
+    
+    
+    if (selValue == "Voter"){
+        window.location.href="voter.html"
+    }else if(selValue == "Politician"){
+        window.location.href="politician.html"
+             }else if(selValue == "Electoral Body"){
+        window.location.href="electoralbody.html"
+    }
+}
+*/
+
+//nav
+function nav(select){
+    window.location = select.value;
+}
+    </script>
+    
+  </div>
+</body>
+</html>
