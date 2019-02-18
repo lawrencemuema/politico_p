@@ -31,6 +31,11 @@ Method | Endpoint | Usage |
 |USERS| ------ |  |
 |POST| `/api/v1/signup` | register user. |
 |GET| `/api/v1/signin` | user login. |
+|   .  |    .  |     .     |
+|CANDIDATES| ------ |  |
+|POST| `/api/v1/apply` | Apply for office. |
+|GET| `/api/v1/apply` | view all candidates. |
+|GET| `/api/v1/apply/<c_id>` | view specific candidates by their id. |
 |  .   |  .   |     .     |
 |VOTES| ------ |     |
 |POST| `/api/v1/vote` | proces voting. |
